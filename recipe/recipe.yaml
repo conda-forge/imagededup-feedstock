@@ -1,6 +1,6 @@
 context:
   name: imagededup
-  version: "0.3.2"
+  version: "03.3"
 
 package:
   name: ${{ name|lower }}
@@ -9,11 +9,11 @@ package:
 source:
   # No source distribution available, see issue https://github.com/idealo/imagededup/issues/222
   url: https://github.com/idealo/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 2a890cd92f884eb50b95daf7c375d56bf955c239602cece4f8fcca2aaddade7e
+  sha256: a8461e1dde50339dc2ce75481e41ac09c166b9b7baf82837462a46abb60d6cbb
 
 build:
   script: python -m pip install . -vv
-  number: 1
+  number: 0
   # windows build requires pytorch
   skip: win
 
